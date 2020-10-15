@@ -1,6 +1,6 @@
 name: media_scanner
 description: Media scanner is library for scan new Media in Gallery, Only work in Android
-version: 1.0.0
+version: 1.0.1
 author: Mudassir<hey.mudassir@gmail.com>
 homepage: https://github.com/ukieTux/media_scanner/
 
