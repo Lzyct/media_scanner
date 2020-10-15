@@ -7,6 +7,7 @@ void main() {
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  /// check if not return null
   test('refreshGallery', () async {
     expect(MediaScanner.loadMedia, isNotNull);
   });

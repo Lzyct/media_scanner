@@ -33,13 +33,13 @@ class MediaScannerPlugin : FlutterPlugin, MethodCallHandler {
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
         if (call.method == "refreshGallery") {
             val path: String? = call.argument("path")
-            Log.d("Media Scanner", "file path : $path")
             result.success(refreshMedia(path))
         } else {
             result.notImplemented()
         }
     }
 
+    /// function to refresh media on Android Device
     private fun refreshMedia(path: String?): String {
         return try {
             if (path == null)
@@ -51,6 +51,7 @@ class MediaScannerPlugin : FlutterPlugin, MethodCallHandler {
                 MediaScannerConnection.scanFile(context, arrayOf(file.toString()),
                         arrayOf(file.name), null)
             }
+            Log.d("Media Scanner", "Success show image $path in Gallery")
             "Success show image $path in Gallery"
         } catch (e: Exception) {
             Log.e("Media Scanner", e.toString())
