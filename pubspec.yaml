@@ -1,11 +1,11 @@
 name: media_scanner
 description: Media scanner is library for scan new Media in Gallery, Only work in Android
-version: 1.0.1
+version: 2.0.0
 author: Mudassir<hey.mudassir@gmail.com>
 homepage: https://github.com/ukieTux/media_scanner/
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.20.0 <2.0.0"
 
 dependencies:
