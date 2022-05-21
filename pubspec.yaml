@@ -30,8 +30,8 @@ flutter:
       android:
         package: com.codexlogs.media_scanner
         pluginClass: MediaScannerPlugin
-      ios:
-        pluginClass: MediaScannerPlugin
+  #    ios:
+  #      pluginClass: MediaScannerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
