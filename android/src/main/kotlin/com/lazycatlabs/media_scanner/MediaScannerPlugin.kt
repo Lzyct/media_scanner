@@ -1,4 +1,4 @@
-package com.codexlogs.media_scanner
+package com.lazycatlabs.media_scanner
 
 import android.content.Context
 import android.content.Intent

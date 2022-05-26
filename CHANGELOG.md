@@ -8,3 +8,6 @@
 
 ## 2.0.0
 * Migrate to Null Safety
+
+## 2.1.0
+* Remove ios plugin

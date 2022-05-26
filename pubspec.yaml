@@ -1,6 +1,6 @@
 name: media_scanner
 description: Media scanner is library for scan new Media in Gallery, Only work in Android
-version: 2.0.0
+version: 2.1.0
 author: Mudassir<hey.mudassir@gmail.com>
 homepage: https://github.com/ukieTux/media_scanner/
 
@@ -28,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.codexlogs.media_scanner
+        package: com.lazycatlabs.media_scanner
         pluginClass: MediaScannerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
