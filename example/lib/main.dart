@@ -1,3 +1,4 @@
+// @dart=2.17
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -5,10 +6,12 @@ import 'package:flutter/services.dart';
 import 'package:media_scanner/media_scanner.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -28,7 +31,8 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       loadMediaMessage = await MediaScanner.loadMedia(
-          path: "/storage/emulated/0/Lazy W.A/LazyPhotos/coba.jpg");
+              path: "/storage/emulated/0/Lazy W.A/LazyPhotos/coba.jpg") ??
+          'Success';
     } on PlatformException {
       loadMediaMessage = 'Failed to get platform version.';
     }
